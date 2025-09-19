@@ -1,7 +1,7 @@
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/ashes_dark.toml"
+    "~/.config/alacritty/themes/ashes_dark.toml"
 ]
 
 [cursor]
