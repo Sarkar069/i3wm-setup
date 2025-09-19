@@ -7,7 +7,7 @@ This repository contains my personal Linux configuration files using **i3 window
 - i3 keybindings and workspace layouts without any bars
 - Picom for compositing effects
 - Rofi/j4-dmenu-desktop launcher
-- Pywal16 Integration with kitty terminal
+- (Pywal16)[https://github.com/eylles/pywal16] Integration with kitty terminal
 - Alacritty terminal with custom theme
 - Handy scripts
 - Ranger 
