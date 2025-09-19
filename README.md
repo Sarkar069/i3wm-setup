@@ -4,18 +4,20 @@ This repository contains my personal Linux configuration files using **i3 window
 
 ## Features
 
-- i3 keybindings and workspace layouts
+- i3 keybindings and workspace layouts without any bars
 - Picom for compositing effects
-- j4-dmenu-desktop launcher
+- Rofi/j4-dmenu-desktop launcher
 - Pywal16 Integration with kitty terminal
 - Alacritty terminal with custom theme
 - Handy scripts
+- Ranger 
+- Fastfetch 
 - .zshrc with powerlevel10k
 
 
 ## Notes
 
-- Some scripts may need chmod +x to be executable
+- .sh scripts may need chmod +x to be executable
 
 - Adjust paths in scripts if needed
 
