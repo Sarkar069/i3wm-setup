@@ -4,7 +4,7 @@
 sleep 2
 
 # Set resolution
-xrandr --output Virtual-1 --mode 1360x768
+xrandr --output eDP-1 --mode 1360x768
 
 # Start compositor with small delay
 sh -c "sleep 0.5 && picom --config ~/.config/picom/picom.conf" &
