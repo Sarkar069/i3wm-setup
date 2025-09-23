@@ -20,13 +20,14 @@ set $mod Mod4
 #----------------------#
 
 # pywall 
-exec --no-startup-id wal -R
+exec_always --no-startup-id wal -R
 
 # Set resolution (added delay to ensure X is ready)
 exec_always --no-startup-id ~/.config/i3/autostart.sh
 
 #cursor
 exec_always --no-startup-id sh -c "while true; do xsetroot -cursor_name left_ptr; sleep 5; done"
+
 # Start compositor
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
@@ -49,6 +50,8 @@ font pango:Fira Code 10
 #----------------------#
 # COLORS
 # Pull colors from Xresources
+#-----------------------#
+
 set_from_resource $fg i3wm.color0 #ffffff
 set_from_resource $bg i3wm.color2 #000000
 
@@ -97,6 +100,12 @@ bindsym $mod+v exec --no-startup-id copyq show
 
 # Screehshots
 bindsym $mod+shift+s exec --no-startup-id sh -c 'mkdir -p ~/Pictures/Screenshots && scrot ~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png && notify-send "Screenshot taken" '
+
+# toggle wifi 
+bindsym $mod+shift+n exec --no-startup-id ~/.config/i3/toggle-wifi.sh
+
+# emoijs 
+bindsym $mod+m exec --no-startup-id ~/.config/i3/emojis.sh
 
 #----------------------#
 # AUDIO BINDINGS
@@ -210,4 +219,5 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
 
