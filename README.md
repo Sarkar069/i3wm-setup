@@ -23,7 +23,4 @@ This repository contains my personal Linux configuration files using **i3 window
 
 - Feel free to fork and adapt
 
-## Screenshots
-![test1](screenshots/test1.png)
-![test2](screenshots/test2.png)
 
