@@ -93,6 +93,8 @@ bindsym $mod+shift+w exec --no-startup-id ~/.config/i3/show-workspace.sh
 #bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
 
+# Open projects in Code (Vscdoe)
+bindsym $mod+p exec --no-startup-id ~/.config/i3/projects.sh
 
 # CopyQ
 bindsym $mod+v exec --no-startup-id copyq show
